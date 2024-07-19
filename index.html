@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>First Project</title>
+    <style>
+        div{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button onclick="bulbOn()">Bulb On</button>
+    <img id="img1" src="pic_bulboff.gif" alt="">
+    <button onclick="blubOff()"> Bulb Off</button>
+    </div>
+    <div>
+        <button onclick="start()">Start</button>
+        <img id="img2" src="Screenshot 2024-07-19 171503.png" alt="" width="373px" height="281px">
+        <button onclick="stop()">Stop</button>
+    </div>
+    <script>
+        function bulbOn(){
+            document.getElementById("img1").src = "pic_bulbon.gif";
+        };
+        function blubOff(){
+            document.getElementById("img1").src = "pic_bulboff.gif";
+        };
+        function start(){
+            document.getElementById("img2").src = "tom-and-jerry-tom-and-jerry-cartoon.gif";
+        };
+        function stop(){
+            document.getElementById("img2").src = "Screenshot 2024-07-19 171503.png";
+        };
+    </script>
+</body>
+</html>
